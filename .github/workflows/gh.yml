@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: env
-            - run: gh -version
+            - run: gh --version
             - run: gh auth status
             - run: gh repo list
             - run: gh issue list
