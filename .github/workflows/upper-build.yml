@@ -18,8 +18,8 @@ jobs:
             - run: go version
             - run: |
                 ls
-                go mod init upper
                 go build
                 ls
                 go test
                 ./upper foo the bar
+              working-directory: upper
