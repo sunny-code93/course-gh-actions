@@ -1,0 +1,16 @@
+name: api-build
+
+on:
+    push:
+        paths:
+        - 'api/**'
+        - '.github/workflows/api-build.yml'
+
+jobs:
+  build:
+    name: build-dotnet-api
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build API
+        run: echo "Building API"
